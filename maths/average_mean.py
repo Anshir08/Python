@@ -1,9 +1,9 @@
 """Find mean of a list of numbers."""
 
 
-def average(nums):
+def average(nums,n):
     """Find mean of a list of numbers."""
-    return sum(nums) / len(nums)
+    return sum(nums) / n
 
 
 def test_average():
@@ -16,5 +16,7 @@ def test_average():
 
 
 if __name__ == "__main__":
+    n = int(input("Enter the length of the list: "))
+    list = [int(i) for i in range(n)]
     """Call average module to find mean of a specific list of numbers."""
-    print(average([2, 4, 6, 8, 20, 50, 70]))
+    print(average(list,n))
