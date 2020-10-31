@@ -6,7 +6,7 @@ def reverse_words(input_str: str) -> str:
     >>> reverse_words("I     Love          Python")
     'Python Love I'
     """
-    return " ".join(input_str.split()[::-1])
+    return " ".join(input_str.strip().split()[::-1])
 
 
 if __name__ == "__main__":
